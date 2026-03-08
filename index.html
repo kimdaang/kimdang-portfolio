@@ -5,6 +5,10 @@
 
 <style>
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     font-family: Georgia, serif;
     margin:0;
@@ -17,6 +21,19 @@ body{
     padding:15px;
     display:flex;
     justify-content:space-between;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+.navbar a:hover{
+    text-decoration:underline;
 }
 
 .container{
@@ -39,6 +56,7 @@ body{
 
 .section{
     margin-top:40px;
+    scroll-margin-top:80px;
 }
 
 .section h2{
@@ -74,133 +92,123 @@ body{
 </style>
 </head>
 
-
 <body>
 
 <div class="navbar">
-<div>Kim Dang Portfolio</div>
-<div>
-Home &nbsp;&nbsp;
-Professional Experience &nbsp;&nbsp;
-Projects &nbsp;&nbsp;
-Skills
-</div>
+    <div>Kim Dang Portfolio</div>
+    <div>
+        <a href="#home">Home</a>
+        <a href="#experience">Professional Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+    </div>
 </div>
 
 <div class="container">
 
-<div class="header">
-<img src="profile.jpg">
+    <div class="header section" id="home">
+        <img src="profile.jpg">
 
-<div>
-<h1>Hello!</h1>
+        <div>
+            <h1>Hello!</h1>
 
-<p>
-My name is Kim Dang, and I graduated from University of California, Santa Barbara
-with a degree in Electrical Engineering. Growing up in the Bay Area sparked my
-interest in applying electrical engineering in real world infrastructure, power
-systems, and practical engineering design.
-</p>
+            <p>
+            My name is Kim Dang, and I graduated from University of California, Santa Barbara
+            with a degree in Electrical Engineering. Growing up in the Bay Area sparked my
+            interest in applying electrical engineering in real world infrastructure, power
+            systems, and practical engineering design.
+            </p>
 
-<h1>Kim Dang</h1>
-<p>Electrical Engineer</p>
-</div>
-</div>
+            <h1>Kim Dang</h1>
+            <p>Electrical Engineer</p>
+        </div>
+    </div>
 
+    <div class="section" id="experience">
+        <h2>Professional Experience</h2>
 
-<div class="section">
-<h2>Professional Experience</h2>
+        <div class="experience">
+            <div>
+                <b>Stantec</b><br>
+                Electrical Design Engineer
+            </div>
+            <div>September 2025 - Present</div>
+        </div>
 
-<div class="experience">
-<div>
-<b>Stantec</b><br>
-Electrical Design Engineer
-</div>
-<div>September 2025 - Present</div>
-</div>
+        <div class="experience">
+            <div>
+                <b>Stantec</b><br>
+                Electrical Engineer Intern
+            </div>
+            <div>June 2025 - September 2025</div>
+        </div>
 
-<div class="experience">
-<div>
-<b>Stantec</b><br>
-Electrical Engineer Intern
-</div>
-<div>June 2025 - September 2025</div>
-</div>
+        <div class="experience">
+            <div>
+                <b>Capella Partners</b><br>
+                Electrical Engineer Intern
+            </div>
+            <div>January 2025 - March 2025</div>
+        </div>
+    </div>
 
-<div class="experience">
-<div>
-<b>Capella Partners</b><br>
-Electrical Engineer Intern
-</div>
-<div>January 2025 - March 2025</div>
-</div>
+    <div class="section" id="education">
+        <h2>Education</h2>
 
-</div>
+        <div class="education">
+            <div>
+                <b>University of California - Santa Barbara</b><br>
+                Bachelor of Science, Electrical Engineering
+            </div>
+        </div>
+    </div>
 
+    <div class="section" id="projects">
+        <h2>Highlighted Projects</h2>
 
-<div class="section">
-<h2>Education</h2>
+        <div class="projects">
 
-<div class="education">
-<div>
-<b>University of California - Santa Barbara</b><br>
-Bachelor of Science, Electrical Engineering
-</div>
-</div>
+            <div class="project">
+                <img src="Litespeed-logo.png">
+                <p>F1Tenth Autonomous Racing Car</p>
+            </div>
 
-</div>
+            <div class="project">
+                <img src="project2.png">
+                <p>Multi Stage Audio Amplifier Design</p>
+            </div>
 
+            <div class="project">
+                <img src="project3.png">
+                <p>Single Photon Anti Bunching</p>
+            </div>
 
-<div class="section">
-<h2>Highlighted Projects</h2>
+            <div class="project">
+                <img src="project4.png">
+                <p>Photovoltaic Cell Efficiency Characterization</p>
+            </div>
 
-<div class="projects">
+        </div>
+    </div>
 
-<div class="project">
-<img src="Litespeed-logo.png">
-<p>F1Tenth Autonomous Racing Car</p>
-</div>
+    <div class="section" id="skills">
+        <h2>Skills</h2>
 
-<div class="project">
-<img src="project2.png">
-<p>Multi Stage Audio Amplifier Design</p>
-</div>
-
-<div class="project">
-<img src="project3.png">
-<p>Single Photon Anti Bunching</p>
-</div>
-
-<div class="project">
-<img src="project4.png">
-<p>Photovoltaic Cell Efficiency Characterization</p>
-</div>
-
-</div>
-
-</div>
-
-
-<div class="section">
-<h2>Skills</h2>
-
-<div class="skills">
-Revit<br>
-AutoCAD<br>
-Bluebeam Revu<br>
-PowerTools<br>
-ROS<br>
-Python<br>
-MATLAB<br>
-Verilog<br>
-LTSpice<br>
-Altera Quartus II<br>
-Autodesk Eagle<br>
-Arduino
-</div>
-
-</div>
-
+        <div class="skills">
+            Revit<br>
+            AutoCAD<br>
+            Bluebeam Revu<br>
+            PowerTools<br>
+            ROS<br>
+            Python<br>
+            MATLAB<br>
+            Verilog<br>
+            LTSpice<br>
+            Altera Quartus II<br>
+            Autodesk Eagle<br>
+            Arduino
+        </div>
+    </div>
 
 </div>
 
