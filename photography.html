@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Photography Gallery</title>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+
+<style>
+
+body{
+background:#111;
+color:white;
+font-family:Arial;
+text-align:center;
+}
+
+h1{
+margin-top:40px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:12px;
+padding:20px;
+max-width:1200px;
+margin:auto;
+}
+
+.gallery img{
+width:100%;
+border-radius:6px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Photography</h1>
+
+<div class="gallery">
+
+<a href="images/photo1.jpg" data-lightbox="gallery">
+<img src="images/photo1.jpg">
+</a>
+
+<a href="images/photo2.jpg" data-lightbox="gallery">
+<img src="images/photo2.jpg">
+</a>
+
+<a href="images/photo3.jpg" data-lightbox="gallery">
+<img src="images/photo3.jpg">
+</a>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+</body>
+</html>
